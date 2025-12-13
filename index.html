@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025 LMT Fall SET! Mini event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">2025 LMT Fall Mini event</p>
+        <h1>SET with Chocolates</h1>
+        <p class="lede"> Rules: <a class="rule-link" href="https://setwithfriends.com/help" target="_blank">https://setwithfriends.com/help</a></p>
+        <div class="actions">
+          <button id="edit" class="btn ghost">Edit names</button>
+          <button id="clear" class="btn ghost">Clear all</button>
+          <button id="shuffle" class="btn">Shuffle names</button> 
+        </div>
+      </div>
+      <div class="badge">Check your allergies before getting prizes!!! </div>
+    </header>
+
+    <main class="bracket">
+      <section class="round" data-round="quarterfinals">
+        <h3>Round 1 · 4 groups</h3>
+        <div class="matches">
+          <div class="match" data-match="0">
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+          <div class="match" data-match="1">
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+          <div class="match" data-match="2">
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+          <div class="match" data-match="3">
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="round" data-round="semifinals">
+        <h3>Semifinals · 2 groups</h3>
+        <div class="matches">
+          <div class="match" data-match="0">
+            <div class="connector connector--left"></div>
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+          <div class="match" data-match="1">
+            <div class="connector connector--left"></div>
+            <div class="connector connector--right"></div>
+            <div class="teams"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="round" data-round="final">
+        <h3>Final · 1 group</h3>
+        <div class="matches">
+          <div class="match" data-match="0">
+            <div class="connector connector--left"></div>
+            <div class="teams"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="round champion">
+        <h3>Winner</h3>
+        <div class="champion__card">
+          <div class="crown">★</div>
+          <div class="name" id="champion-name"></div>
+          <p class="note">admits</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay hidden" id="editor">
+    <div class="editor-card">
+      <div class="editor-head">
+        <div>
+          <p class="eyebrow">Edit bracket</p>
+          <h3>Type your teams</h3>
+        </div>
+        <button type="button" id="editor-close" class="btn ghost small">Close</button>
+      </div>
+      <form id="editor-form">
+        <div id="editor-content" class="editor-content"></div>
+        <div class="editor-actions">
+          <button type="submit" class="btn">Save names</button>
+          <button type="button" id="editor-cancel" class="btn ghost">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
