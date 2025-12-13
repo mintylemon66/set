@@ -1,16 +1,12 @@
 const seeds = {
   quarterfinals: [
-    ['Sakura Bloom', 'Mint Whisper'],
-    ['Rose Meringue', 'Green Velvet'],
-    ['Lychee Mist', 'Pistachio Cream'],
-    ['Petal Pearl', 'Ceremonial Cloud'],
+    ['',''],    ['',''],    ['',''],    ['','']
   ],
   semifinals: [
-    ['Winner of 1', 'Winner of 2'],
-    ['Winner of 3', 'Winner of 4'],
+    ['',''],    ['',''],    ['',''],    ['','']
   ],
-  final: [['Semi A', 'Semi B']],
-  champion: 'To be crowned',
+  final: [['',''],    ['',''],    ['',''],    ['','']],
+  champion: '',
 };
 
 const palettes = [
