@@ -340,6 +340,12 @@ body::after {
   padding-right: 6px;
 }
 
+.editor-helper {
+  margin: 0;
+  font-size: 13px;
+  color: #4f5646;
+}
+
 .edit-section {
   padding: 12px 14px;
   border-radius: 12px;
@@ -352,6 +358,14 @@ body::after {
   font-size: 14px;
   letter-spacing: 0.01em;
   color: #4a4e40;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .inputs-grid {
@@ -448,6 +462,13 @@ body::after {
 .chip:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(58, 60, 56, 0.12);
+}
+
+.chip:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 @media (max-width: 960px) {
